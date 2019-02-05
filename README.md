@@ -1,6 +1,6 @@
 The 'games' GamesApplication  is a runnable from the IDE SpringBoot application.
 
- 1. The application every 5 seconds reads a JSON object with Bitcoin course data from a resource:
+ 1. The application every 5 seconds reads a JSON object with Bitcoin rate data from a resource:
 "https://api.coindesk.com/v1/bpi/currentprice.json?t=123454"
 
 2. Adds a field "ID". Changes the "chartName" field by adding the "GameSys version". The GBP rate divides by 10. The modified data is recorded in the in-memory H2 database.
